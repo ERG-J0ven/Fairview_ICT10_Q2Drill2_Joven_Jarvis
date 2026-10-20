@@ -8,26 +8,95 @@
     <script type="module" src="https://pyscript.net/releases/2026.7.1/core.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        body{
+            background-color: #0041ab;
+        }
+
+        #headingtext{
+            text-align: center;
+            border-radius: 16px;
+            border: 2px solid white;
+            margin-left: 500px;
+            margin-right: 500px;
+            background-color: #0072d6;
+            color: white;
+        }
+
+        #ohyeaboy{
+            border: 2px solid white;
+            border-radius: 16px;
+            margin-left: 600px;
+            margin-right: 600px;
+            text-align: center;
+            background-color: #0072d6;
+            color: white; 
+        }
+
+        footer{
+        text-align: center;
+        display: block;
+        padding: 3px;
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 35px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        position: fixed;
+       }
+
+       #booooom{
+        border-radius: 16px;
+        border: 2px solid white;
+        margin-left: 400px;
+        margin-right: 400px;
+        background-color: #0072d6;
+        color: white;
+       }
+
+       #listofmathdudes{
+        white-space: pre-line;
+       }
+
+
+    </style>
     <title>Document</title>
 </head>
 <body>
 
+    <br>
+    <div id="headingtext" class="shadow-lg p-3 mb-5">
+    <h1>Math Club Checker</h1>
+    </div>
+
+    <br>
+
     <script type="py" src="main.py"></script>
 
-    <div>
-        <input type="text" id="fname" placeholder="Enter your first name" required>
+    <div id="booooom" class="shadow-lg p-3 mb-5">
+        
+        <input type="text" id="fname" class="form-control" placeholder="Enter your first name" required>
 
         <br>
 
-        <input type="text" id="lname" placeholder="Enter your last name" required>
+        <input type="text" id="lname" class="form-control" placeholder="Enter your last name" required>
 
         <br>
 
-        <button id="addyourself" py-click="goinnow">Submit</button>
+        <button style="border-radius: 8px; justify-content: center;" class="btn btn-info mb-15" id="addyourself" py-click="goinnow">Submit</button>
+        </div>
 
-        <div id="ohyeaboy">
+        <br>
+
+        <div id="ohyeaboy" class="shadow-lg p-3 mb-5">
             <p id="listofmathdudes"></p>
         </div>
+
+        <footer>
+        <p>Jarvis Joven, 10-Topaz</p>
+        </footer>
     
 </body>
 </html>
